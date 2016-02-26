@@ -1,6 +1,6 @@
 import unittest
 
-from main import add, times
+from main import add, times, divide
 
 
 class TestCase(unittest.TestCase):
@@ -13,3 +13,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(times(2, 2), 4)
         self.assertEqual(times(1, -1), -1)
         self.assertEqual(times(-1, -1), 1)
+
+    def test_divide(self):
+        self.assertEqual(divide(1, 2), 0.5)
+        
